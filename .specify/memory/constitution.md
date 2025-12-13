@@ -1,55 +1,74 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 0.0.0 -> 1.0.0
+- Added sections:
+  - Principle: Documentation-First Clarity
+  - Principle: Spec-Anchored Development (SAD)
+  - Principle: Technical Rigor & Depth
+  - Principle: Modularity for Maintainability
+  - Principle: Key Standards: Docusaurus Textbook Content & Structure
+  - Principle: Key Standards: RAG Chatbot Integration
+- Removed sections:
+  - [PRINCIPLE_1_NAME]
+  - [PRINCIPLE_2_NAME]
+  - [PRINCIPLE_3_NAME]
+  - [PRINCIPLE_4_NAME]
+  - [PRINCIPLE_5_NAME]
+  - [PRINCIPLE_6_NAME]
+  - [SECTION_2_NAME]
+  - [SECTION_3_NAME]
+- Templates requiring updates:
+  - ✅ .specify/templates/plan-template.md
+  - ✅ .specify/templates/spec-template.md
+  - ✅ .specify/templates/tasks-template.md
+-->
+# Physical AI & Humanoid Robotics Textbook and Integrated RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Documentation-First Clarity
+All content must achieve the clarity, completeness, and structured navigation of professional technical documentation (e.g., official ROS or NVIDIA Isaac docs), ensuring ease of understanding for students.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Spec-Anchored Development (SAD)
+The specifications are the single source of truth. All content and code generated must rigorously adhere to the detailed requirements of this Constitution and subsequent plan documents.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Technical Rigor & Depth
+Explanations must be detailed, academically accurate, and provide sufficient material to teach the specified 13-week university-level course, covering both theoretical foundations and practical application.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Modularity for Maintainability
+The project structure (Docusaurus modules, FastAPI backend) must be inherently modular to support versioning, updates, and future scaling.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Key Standards: Docusaurus Textbook Content & Structure
+- **Course Structure**: The textbook must be divided into five top-level Modules, matching the 13-week course outline:
+    - Introduction to Physical AI (Weeks 1-2)
+    - The Robotic Nervous System (ROS 2) (Weeks 3-5)
+    - The Digital Twin (Gazebo & Unity) (Weeks 6-7)
+    - The AI-Robot Brain (NVIDIA Isaac™) (Weeks 8-11)
+    - Vision-Language-Action (VLA) (Weeks 12-13)
+- **Chapter Depth**: Each weekly section must be a standalone chapter, extensive in content, not short, and teach its concept clearly.
+- **Chapter Template**: Every chapter (Markdown/MDX file) must strictly follow this structure:
+    - Objective: Clear learning goals.
+    - Prerequisites/Setup: Required software, hardware, or prior knowledge.
+    - Conceptual Explanation: Detailed, paragraph-form explanations.
+    - Technical Deep Dive: Advanced concepts and architecture overviews.
+    - Code Implementation: Code blocks with runnable, real-world examples.
+    - Summary/Checkpoints.
+- **Code Blocks**: All necessary code blocks (e.g., Python, C++, Bash/YAML) must use correct syntax highlighting and be accompanied by line-by-line explanation blocks.
+- **Visualization**: Utilize conceptual diagrams immediately following the concept definition for clarity.
+- **Docusaurus UI**: The site must utilize the classic preset with a clean, responsive theme suitable for technical reading.
 
-### [PRINCIPLE_6_NAME]
-
-
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### VI. Key Standards: RAG Chatbot Integration
+- **Technology Stack Mandate**: Strict adherence to the required components for the RAG system:
+    - RAG Orchestration/LLM Gateway: OpenAI Agents/ChatKit SDKs
+    - Vector Database: Qdrant Cloud Free Tier
+    - Relational/Metadata Database: Neon Serverless Postgres
+    - API Service: FastAPI
+- **Functional Requirement 1 (General Q&A)**: The chatbot must be able to retrieve and synthesize information from the entire published textbook content to answer user questions.
+- **Functional Requirement 2 (Contextual Q&A)**: The chatbot must include a mechanism (e.g., an embedded button or listener) to accept user-selected text as the sole context for answering a specific follow-up question.
+- **Integration**: The chatbot must be a visually consistent, embeddable component on all Docusaurus pages, not a separate, full-page application.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution is the supreme source of truth for the project. All development, content creation, and architectural decisions must align with its principles. Amendments to this constitution require a formal proposal, review, and approval process. All pull requests and reviews must verify compliance with these principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-11 | **Last Amended**: 2025-12-11

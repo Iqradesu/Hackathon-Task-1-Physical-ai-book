@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+*   [ ] **I. Documentation-First Clarity**: Does the plan prioritize clear, comprehensive documentation for all features and components?
+*   [ ] **II. Spec-Anchored Development (SAD)**: Does the plan rigorously adhere to the approved specification?
+*   [ ] **III. Technical Rigor & Depth**: Does the plan account for the required level of academic and technical detail?
+*   [ ] **IV. Modularity for Maintainability**: Is the proposed architecture modular and scalable?
+*   [ ] **V. Docusaurus Textbook Standards**: Does the plan for content creation meet all specified chapter structure, depth, and formatting requirements?
+*   [ ] **VI. RAG Chatbot Standards**: Does the plan for the chatbot meet all specified technology stack and functional requirements?
 
 ## Project Structure
 
