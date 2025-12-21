@@ -52,7 +52,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'vision-language-action/5.0_vla-paradigm',
         'vision-language-action/5.1_voice-to-action',
-        'vision-language-action/5.2-cognitive-planning',
+        'vision-language-action/5.2_cognitive-planning',
         'vision-language-action/5.3_capstone-integration',
         'vision-language-action/5.4_capstone-summary-future',
       ],
